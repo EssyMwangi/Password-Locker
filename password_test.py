@@ -27,3 +27,28 @@ class TestUser(unittest.TestCase):
     '''
     self.new_user.save_user()
     self.assertEqual(len(User.user_list),1)
+  
+
+class TestCredentials(unittest.TestCase):
+  '''
+  Test class that defines test cases for Credentials class behaviors
+  Args:
+    unittest.TestCase: TestCase class that helps in creating test cases
+  '''
+
+  def setUp(self):
+    '''Set Up method to run 
+  
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+  unittest.main()
