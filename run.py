@@ -79,12 +79,13 @@ def check_credentials(account_platform):
     '''
     return Credentials.credential_exist(account_platform)
 
-# def generate_Password(self):
-#   '''
-#   generates a random password.
-#   '''
-#   gen_password = generate_Password(self)
-#   return gen_password
+
+def generate_Password():
+    '''
+    generates a random password for the user.
+    '''
+    auto_password = Credentials.generatePassword()
+    return auto_password
 
 
 def copy_username(account_platform):
@@ -108,9 +109,9 @@ def main():
             if password_Choice == 't':
                 password = input("Enter Password\n")
                 break
-            # elif password_Choice == 'g':
-            #     password = generate_Password()
-            #     break
+            elif password_Choice == 'g':
+                password = generate_Password()
+                break
             else:
                 print("Invalid password please try again")
         save_user(create_user(username, password))
@@ -145,9 +146,9 @@ def main():
                 if password_Choice == 't':
                     password = input("Enter Your Own Password\n")
                     break
-                # elif password_Choice == 'g':
-                #     password = generate_Password()
-                #     break
+                elif password_Choice == 'g':
+                    password = generate_Password()
+                    break
                 else:
                     print("Invalid password please try again")
             save_credentials(create_new_credential(
@@ -198,9 +199,9 @@ def main():
                 print(
                     "That Credential you want to delete does not exist in your store yet")
 
-        # elif short_code == 'g':
-        #     password = generate_Password()
-        #     print(f" {password} Has been generated succesfull. You can proceed to use it to your account")
+        elif short_code == 'g':
+            password = generate_Password()
+            print(f" {password} Has been generated succesfull. You can proceed to use it to your account")
         elif short_code == 'e':
             print("Thanks for using passwords store manager.. See you next time!")
             break
