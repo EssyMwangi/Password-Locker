@@ -1,6 +1,7 @@
 import pyperclip
 import random
 import string
+import secrets
 class User:
   '''
   A Class that generates new instances of a user
@@ -115,9 +116,11 @@ class Credentials():
         the_user == user.username
     return the_user
 
-  def generatePassword(self,stringLength=10):
-    '''
-    Method generates a random password string of lettersand digits and special characters
-    '''
-    password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "-*&$%`#@^!|"
-    return ''.join(random.choice(password) for i in range (stringLength) )
+  # def generate_Password(self,stringLength=10):
+  #   '''
+  #   Method generates a random password string of lettersand digits and special characters
+  #   '''
+  #   password_characters = string.ascii_letters + string.digits + string.punctuation
+  #   return ''.join(random.choice(password_characters) for i in range(stringLength))
+  
+ 
