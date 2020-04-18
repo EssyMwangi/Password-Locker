@@ -9,7 +9,8 @@ def function():
 	print("              |_|    \_____| ___/  ___/    \/  \/   \_____/ |_|    \_____|     |_____| \_____/  |_____|  |_| \_\  |______| |_|                        ")
 
 function()
-
+  
+  
 def create_user(username,password):
     '''
     Function to create a new user
@@ -17,7 +18,7 @@ def create_user(username,password):
     new_user = User(username,password)
     return new_user
 
-
+ 
 def save_user(User):
     '''
     Function to save user
