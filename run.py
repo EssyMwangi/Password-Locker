@@ -179,7 +179,6 @@ def main():
                 print("That Credential you want to delete does not exist in your store yet")
 
         # elif short_code == 'g':
-
         #     password = generate_Password()
         #     print(f" {password} Has been generated succesfull. You can proceed to use it to your account")
         elif short_code == 'e':
