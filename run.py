@@ -123,14 +123,25 @@ def main():
         print("*"*50)
         print("Enter your User name and your Password to log in:")
         print('*' * 50)
-        username = input("User name: ")
-        password = input("password: ")
+        username = input("User name:")
+        password = input("password:")
         login = login_user(username, password)
         if login_user == login:
             print(f"Hello {username}.Welcome To PassWord Locker ")
             print('\n')
+    elif short_code == "y":
+        print("*"*50)
+        print("Enter your User name and your Password to log in:")
+        print('*' * 50)
+        username = input("User name:")
+        password = input("password:")
+        login = login_user(username, password)
+        if login_user != login:
+            print("Invalid input,kindly check your account details")
+            print('\n')   
+        
     while True:
-        print("Use these short codes:\n C - Create a new credential \n DC - Display Credentials \n F - Find a credential \n G - Generate A randomn password \n D - Delete credential \n E - Exit the application \n")
+        print("Use these short codes:\n C - Create a new credential \n DC - Display Credentials \n F - Find a credential \n D - Delete credential \n E - Exit the application \n")
         short_code = input().lower().strip()
         if short_code == "c":
             print("Create New Credential")
