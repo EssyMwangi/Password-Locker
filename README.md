@@ -9,7 +9,7 @@ This project is a python application that manages login and signup credentials o
 
 ## Screenshot
 
-<img src="https://user-images.githubusercontent.com/44394821/79693650-85278b80-8274-11ea-8516-227ad55410ab.png" width="900px" height="440px">
+<img src="https://user-images.githubusercontent.com/44394821/79837836-bf9b4080-83ba-11ea-96aa-825cc959d334.png" width="900px" height="440px">
 
 ## User Stories
 The user would like to.... :
