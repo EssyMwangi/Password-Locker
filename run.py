@@ -97,7 +97,7 @@ def copy_username(account_platform):
 
 
 def main():
-    print("Hello Welcome to your Password Locker...\n Please enter one of the following to proceed.\n C ---  Create New Account  \n Y ---  Have An Account  \n")
+    print("Hello Welcome to your Password Locker...\n Please enter one of the following to proceed.\n C ---  Create New Account  \n Y ---  Have An Account  \n E --- EXIT Application \n ")
     short_code = input("").lower().strip()
     if short_code == "c":
         print("Sign Up")
@@ -119,6 +119,10 @@ def main():
         print(
             f"Hello {username}, Your account has been created succesfully! Your password is: {password}")
         print("*"*85)
+    elif short_code == 'e':
+        print("Thank you for using passwords vault.. See you next time!")
+        print('\n')
+        exit()
     elif short_code == "y":
         print("*"*50)
         print("Enter your User name and your Password to log in:")
@@ -129,17 +133,8 @@ def main():
         if login_user == login:
             print(f"Hello {username}.Welcome To PassWord Locker ")
             print('\n')
-    elif short_code == "y":
-        print("*"*50)
-        print("Enter your User name and your Password to log in:")
-        print('*' * 50)
-        username = input("User name:")
-        password = input("password:")
-        login = login_user(username, password)
-        if login_user != login:
-            print("Invalid input,kindly check your account details")
-            print('\n')   
-        
+   
+
     while True:
         print("Use these short codes:\n C - Create a new credential \n DC - Display Credentials \n F - Find a credential \n D - Delete credential \n E - Exit the application \n")
         short_code = input().lower().strip()
