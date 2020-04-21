@@ -129,12 +129,18 @@ def main():
         print('*' * 50)
         username = input("User name:")
         password = input("password:")
-        login = login_user(username, password)
-        if login_user == login:
+        if password == "Monica/1" and username == "EssyMwangi":
             print(f"Hello {username}.Welcome To PassWord Locker ")
             print('\n')
-   
-
+        elif password != "Monica/1" and  username != "EssyMwangi":
+            print(f"{username} is invalid, please confirm credentials and try again")
+            exit()
+        elif password == "Monica/1" and  username != "EssyMwangi":
+            print(f"{username} is invalid, please confirm credentials and try again")
+            exit()
+        elif password != "Monica/1" and  username == "EssyMwangi":
+            print("Wrong password please confirm and try again")
+            exit()
     while True:
         print("Use these short codes:\n C - Create a new credential \n DC - Display Credentials \n F - Find a credential \n D - Delete credential \n E - Exit the application \n")
         short_code = input().lower().strip()
