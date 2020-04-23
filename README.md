@@ -9,7 +9,7 @@ This project is a python application that manages login and signup credentials o
 
 ## Screenshot
 
-<img src="https://user-images.githubusercontent.com/44394821/79693650-85278b80-8274-11ea-8516-227ad55410ab.png" width="900px" height="440px">
+<img src="https://user-images.githubusercontent.com/44394821/79837836-bf9b4080-83ba-11ea-96aa-825cc959d334.png" width="900px" height="440px">
 
 ## User Stories
 The user would like to.... :
@@ -55,7 +55,7 @@ The user would like to.... :
 |Display all stored credentials | Enter ```DC```|A list of all credentials that has been stored or ```You don't have any credentials saved yet``` |
 |Find a stored credential based on account name|Enter ```F```| Enter the Account Name you want to search for and returns the account details|
 |Delete an existing credential that you don't want anymore|Enter ```D```|Enter the account name of the Credentials you want to delete and returns true if the account has been deleted and false if the account doesn't exixt|
-|Exit the application| Enter ```D```| The application exits|
+|Exit the application| Enter ```E```| The application exits|
 
 ## Technologies Used
 
